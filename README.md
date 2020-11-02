@@ -8,7 +8,7 @@ is not a sample from a normal distribution.  This should have been obvious, howe
 
 The distribution that is being sampled from here is the f-distribution.  This distribution is a function of two parameters ![](https://render.githubusercontent.com/render/math?math=v_1) and ![](https://render.githubusercontent.com/render/math?math=v_2) which are known as the numbers of degrees of freedom.  ![](https://render.githubusercontent.com/render/math?math=v_1) is equal to ![](https://render.githubusercontent.com/render/math?math=N_1-1) and ![](https://render.githubusercontent.com/render/math?math=v_2) is equal to ![](https://render.githubusercontent.com/render/math?math=N_2-1), where ![](https://render.githubusercontent.com/render/math?math=N_1) and ![](https://render.githubusercontent.com/render/math?math=N_2) are the numbers of random variables used to calculate sample variances in the numerator and denominator of the expression above.  Obviously, ![](https://render.githubusercontent.com/render/math?math=v_1) and ![](https://render.githubusercontent.com/render/math?math=v_2) must both be positive integers.
 
-With that in mind, your task here is to plot the probability density function for the f-distribution with (4,5) degrees of freedom.  Notice that you can extract the value of the cumulative distribution function at x for the t-distribution with `(v1,v2)` degrees of freedom using the python command:
+With that in mind, __your task here is to plot the probability density function for the f-distribution with (4,5) degrees of freedom__.  Notice that you can extract the value of the cumulative distribution function at x for the t-distribution with `(v1,v2)` degrees of freedom using the python command:
 
 ````
 y = scipy.stats.f.cdf( x, v1, v2 )
